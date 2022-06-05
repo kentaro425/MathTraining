@@ -14,6 +14,7 @@
 		96F935F3284CD58800D19F13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96F935F2284CD58800D19F13 /* Assets.xcassets */; };
 		96F935F6284CD58800D19F13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96F935F4284CD58800D19F13 /* LaunchScreen.storyboard */; };
 		96F935FE284CE07600D19F13 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F935FD284CE07600D19F13 /* QuizViewController.swift */; };
+		96F93600284CE4FF00D19F13 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F935FF284CE4FF00D19F13 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		96F935F5284CD58800D19F13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96F935F7284CD58800D19F13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96F935FD284CE07600D19F13 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		96F935FF284CE4FF00D19F13 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				96F935EB284CD58600D19F13 /* SceneDelegate.swift */,
 				96F935ED284CD58600D19F13 /* ViewController.swift */,
 				96F935FD284CE07600D19F13 /* QuizViewController.swift */,
+				96F935FF284CE4FF00D19F13 /* ResultViewController.swift */,
 				96F935EF284CD58600D19F13 /* Main.storyboard */,
 				96F935F2284CD58800D19F13 /* Assets.xcassets */,
 				96F935F4284CD58800D19F13 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96F93600284CE4FF00D19F13 /* ResultViewController.swift in Sources */,
 				96F935EE284CD58600D19F13 /* ViewController.swift in Sources */,
 				96F935EA284CD58600D19F13 /* AppDelegate.swift in Sources */,
 				96F935EC284CD58600D19F13 /* SceneDelegate.swift in Sources */,
@@ -291,6 +295,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K2F3R2T6J5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MathTraining/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -318,6 +323,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K2F3R2T6J5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MathTraining/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

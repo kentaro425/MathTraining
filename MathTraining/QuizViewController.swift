@@ -25,6 +25,12 @@ class QuizViewController: UIViewController {
         setQuestions()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let resultVC = segue.destination as? ResultViewController {
+            resultVC.result = Double(correct) / Double(total) * 100.0
+        }
+    }
+    
     @IBAction func tapped(sender: UIButton) {
         if sender.tag - 1 == answerIndex {
             correct += 1
@@ -33,6 +39,8 @@ class QuizViewController: UIViewController {
         questionIndex += 1
         if questionIndex >= total {
             performSegue(withIdentifier: "QuizToResult", sender: nil)
+        }else {
+            setQuestions()
         }
     }
 
@@ -45,9 +53,9 @@ class QuizViewController: UIViewController {
         case 0:
             rightNumberLabel.text = "\(leftNum + centerNum)"
         case 1:
-            rightNumberLabel.text = "\(leftNum + centerNum)"
+            rightNumberLabel.text = "\(leftNum - centerNum)"
         case 2:
-            rightNumberLabel.text = "\(leftNum + centerNum)"
+            rightNumberLabel.text = "\(leftNum * centerNum)"
         default:
             if centerNum == 0 {
                 centerNum = 1
